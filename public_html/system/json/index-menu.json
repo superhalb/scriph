@@ -1,0 +1,15 @@
+[
+	{
+		"action":"frontend" ,
+		"icon":"eye",
+		"text":"Ver Web"
+	} , {
+		"action":"settings" , 
+		"icon":"gear" , 
+		"text":"Ajustes"
+	} , {
+		"action":"new post" ,
+		"icon":"plus" , 
+		"text":"Nuevo Post"
+	}
+]

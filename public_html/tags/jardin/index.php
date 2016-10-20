@@ -1,0 +1,1 @@
+<?php $_GET["f"] = "jardin"; include "../../index.php";

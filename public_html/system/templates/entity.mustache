@@ -1,0 +1,14 @@
+<div class="entity">
+	<span class="label">{{name}}</span>
+	{{# type-text}}
+		<input name="{{name}}" type="text" class="field" value="{{& value}}" {{#length}}maxlength="{{.}}"{{/length}}></input>
+	{{/ type-text}}
+	{{# type-text-area}}
+		<textarea name="{{name}}" class="field" {{#length}}maxlength="{{.}}"{{/length}}>{{& value}}</textarea>
+	{{/ type-text-area}}
+	{{# type-select-dir}}
+		<select name="{{name}}" class="field">
+			{{#_select dir}}{{&path}}?{{&value}}{{/_select dir}}
+		</select>
+	{{/ type-select-dir}}
+</div>

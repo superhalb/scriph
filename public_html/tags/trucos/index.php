@@ -1,0 +1,1 @@
+<?php $_GET["f"] = "trucos"; include "../../index.php";

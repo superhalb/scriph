@@ -1,0 +1,1 @@
+<?php $_GET["f"] = "contacto"; include "../../index.php";

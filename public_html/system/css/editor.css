@@ -1,0 +1,270 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #222;
+	color: #000;
+}
+
+#options {
+	position: absolute;
+	left: 0px;
+	top: auto;
+	right: 0px;
+	bottom: 0px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 20px;
+	transition: bottom 120ms ease-in-out;
+	background: #222;
+	color: #EEE;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400 !important;
+	font-size: 11px;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.attach-counter {
+	display: inline-block;
+	background: #ADE;
+	color: #002;
+	border-radius: 50px;
+	text-align: center;
+	height: 14px;	
+	line-height: 14px;
+	font-weight: bold;
+	background: #ADE;
+	color: #002;
+	padding: 0px 3px;
+	min-width: 8px;
+	margin-left: 5px;
+	margin-right: -5px;
+}
+
+.edit-post-tags {
+	font-weight: 600;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #EEE;
+	width: 200px;
+	height: 40px;	
+	padding: 0px;
+}
+
+#editor {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 40px;
+	bottom: 40px;
+	transition: bottom 120ms ease-in-out;
+}
+
+.editor-options {
+	bottom: 60px;
+}
+
+#input_area {
+	position: absolute;
+	left: 0px;
+	right: 50%;
+	height: 100%;
+	border-right: 1px dashed rgba(0,0,0,0.25);
+	background: #F8F6f3;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#input_area:after {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	padding: 10px 20px;
+	height: 20px;
+	line-height: 20px;
+	background: rgba(255,255,255,0.9);
+	font-size: 11px;
+	font-family: 'Open Sans';
+	content: 'MARKDOWN';
+	color: #888;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#preview_area {
+	position: absolute;
+	right: 0px;
+	left: 50%;
+	height: 100%;
+	background: rgb( 253, 253, 253 );
+}
+
+
+#preview_area:after {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	padding: 10px 20px;
+	height: 20px;
+	line-height: 20px;
+	background: rgba(255,255,255,0.9);
+	font-size: 11px;
+	font-family: 'Open Sans';
+	content: 'PREVISUALIZACION';
+	color: #888;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.edit-post-title {
+	font-weight: bold;
+	font-size: 30px;
+	position: relative;
+	display: block;
+	width: 100%;
+	line-height: 30px;
+	overflow: visible;
+	font-family: 'Inconsolata', monospace;
+	background: #FFF;
+	border: none;
+//  border-bottom: 1px solid #eee;
+	padding: 20px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0px;
+	height: 70px;
+	overflow: hidden;
+}
+
+#title_preview {
+	padding-top: 12px;
+}
+
+.edit-post-excerpt {
+	display: block;
+	font-weight: bold;
+	font-size: 20px;
+	width: 100%;
+	line-height: 20px;
+	overflow: hidden;
+	font-family: 'Inconsolata', monospace;
+	background: #FFF;
+	border: none;
+	padding: 20px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0px;
+	position: relative;
+	overflow: auto;
+	height: 61px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+.char-counter {
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	background: white;
+	border: none;
+	border-bottom: 1px solid #eee;
+	padding: 0px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0px;
+	position: absolute;
+}
+
+.char-counter:after {
+	position: absolute;
+	content: attr(counter);
+	line-height: 20px;
+	height: 20px;
+	right: 5px;
+	font-family: 'Inconsolata', monospace;
+	font-weight: bold;
+	font-size: 10px;
+	background: #ADE;
+	color: #002;
+	padding: 0px 8px;
+	margin: 10px 20px;
+	border-radius: 20px;
+	z-index: 10;
+}
+
+
+.wrap-content {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 40px;
+	bottom: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.pad-wrap-content {
+	padding: 20px;
+}
+
+.edit-post-content {
+	display: inline-block;
+	font-weight: normal;
+	font-size: 16px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0px;
+	margin-bottom: -3px;
+	background: #FFF;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	overflow: hidden;
+	font-family: 'Inconsolata', monospace;
+	line-height: 1.5em;
+}
+
+.edit-post-content > div:nth-child(2n){
+	background: rgba(255,255,0,.1);
+}
+
+.edit-post-content > div:nth-child(2n+1){
+	background: rgba(0,255,255,.1);
+}
+
+
+#sizer {
+	padding: 0px !important;
+	position: absolute;
+	top:0px;
+	left: -2000px;
+}
+
+.post-preview {
+	width: 100%;
+	padding-right: 29px;
+}
+
+
+.tmark {
+	pointer-events:none;
+	position: absolute;
+	width: 100%;
+	height: 0px;
+}
+
+.tmark_t {
+	border-left: 10px solid rgba(100,200,100,0.3);
+	background: rgba(100,200,100,0.05);
+}
+
+.tmark_e {
+	border-left: 10px solid rgba(100,200,100,0.25);
+	background: rgba(100,200,100,0.02);
+}

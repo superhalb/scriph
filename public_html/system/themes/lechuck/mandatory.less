@@ -1,0 +1,126 @@
+@import url(//fonts.googleapis.com/css?family=Raleway:500,200,600,800);
+
+@baseline: 22px;
+@font: 'Raleway', sans-serif;
+
+.post-title {
+	display: block;
+	font-family: @font;
+	font-size: 44px;
+	font-weight: 800;
+	font-style: normal;
+	line-height: 44px;
+	@baseline-adjust: 7px;
+	padding-top: @baseline-adjust;
+	margin-bottom: @baseline - @baseline-adjust;
+}
+
+.post-excerpt {
+	display: block;
+	font-family: @font;
+	font-size: 20px;
+	font-weight: 200;
+	font-style: normal;
+	line-height: @baseline;
+	min-height: @baseline;
+	@baseline-adjust: 4px;
+	padding-top: @baseline + @baseline-adjust;
+	margin-bottom: @baseline + @baseline - @baseline-adjust;
+}
+
+.post-content {
+	display: block;
+	p {
+		font-family: @font;
+		font-size: 16px;
+		font-weight: 500;
+		font-style: normal;
+		line-height: @baseline;
+		@baseline-adjust: 6px;
+		padding-top: @baseline-adjust;
+		margin-bottom: @baseline - @baseline-adjust;
+		padding-bottom: @baseline;
+	}
+	
+	.h {
+		display: block;
+		font-family: @font;
+		font-weight: 800;
+		font-style: normal;
+		line-height: 44px;
+	}
+	
+	h1 {
+		.h;
+		font-size: 44px;
+		@baseline-adjust: 5px;
+		padding-top: @baseline-adjust;
+		margin-bottom: @baseline - @baseline-adjust;
+	}
+
+	h2 {
+		.h;
+		font-size: 33px;
+		@baseline-adjust: 5px;
+		padding-top: @baseline-adjust;
+		margin-bottom: @baseline - @baseline-adjust;
+	}
+
+	h3 {
+		.h;
+		font-size: 22px;
+		@baseline-adjust: 9px;
+		padding-top: @baseline-adjust;
+		margin-bottom: @baseline - @baseline-adjust;
+	}
+	
+	em {
+		font-weight: 200;
+		font-style: italic;
+	}
+	
+	strong {
+		font-weight: 800;
+	}
+	
+	ul {
+		display: block;
+		padding-left: @baseline;
+		li {
+			list-style-type: disc;
+			li {
+				list-style-type: circle;
+			}
+		}
+	}
+
+	ol {
+		display: block;
+		padding-left: @baseline;
+		li {
+			list-style-type: decimal;
+			li {
+				list-style-type: upper-alpha;
+			}
+		}
+	}
+
+	a {
+		font-weight: 600;
+		background: rgb( 238,238,240);
+		padding: 0px 8px;
+		color: #222;
+		transition: color 100ms, background 100ms, padding 100ms;
+		
+		&:hover{
+			background: #222;
+			color: rgb( 238,238,240);
+			padding: 3px 8px;
+		}
+	}
+	
+	img {
+		display: block;
+		height: 396px;
+	}
+}

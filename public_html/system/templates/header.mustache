@@ -1,0 +1,18 @@
+<div id="system_header">
+	<ul class="menu">
+		{{#Menu}}
+			<li action="{{action}}">
+				<i class="fa fa-{{icon}}"></i><span>{{text}}</span>
+			</li>
+		{{/Menu}}
+	</ul>
+	
+	<ul class="menu right">
+		<li action="profile">
+			<i class="fa fa-user"></i><span>{{& Profile.name}}</span>
+		</li>
+		<li action="sign out">
+			<i class="fa fa-sign-out"></i><span>Sign out</span>
+		</li>
+	</ul>
+</div>

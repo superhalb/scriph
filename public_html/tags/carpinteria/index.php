@@ -1,0 +1,1 @@
+<?php $_GET["f"] = "carpinteria"; include "../../index.php";

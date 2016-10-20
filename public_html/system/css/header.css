@@ -1,0 +1,56 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+#system_header {
+	position: absolute;
+	background: #222;
+	color: #EEE;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 40px;
+	z-index: 3;
+	color: #DDD;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 40px;
+	font-weight: 400 !important;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+
+.menu li {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 10px;
+	transition: color 200ms, background 200ms;
+}
+
+.menu  li:hover {
+	color: #FFF;
+	background: #444;
+}
+
+.menu i {
+	position: relative;
+	font-size: 14px;
+	top: 1px;
+}
+
+.menu  li span {
+	padding-left: 10px;
+}
+
+.menu{
+	display: block;
+	position: absolute;
+	left: 10px;
+	right: auto;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+.right{
+	right: 10px;
+	left: auto;
+}

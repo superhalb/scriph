@@ -1,0 +1,29 @@
+
+<header class="site-head" {{#Blog.cover}}style="background-image: url({{& Blog.cover}})"{{/ Blog.cover }}>
+	<div class="vertical">
+		<h1 class="blog-title">{{& Blog.title }}</h1>
+		<h2 class="blog-description">{{& Blog.description }}</h2>
+	</div>
+</header>
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+
+	{{! Each post will be output using this markup }}
+	{{#Post}}
+
+	<article class="post">
+		<header {{#face}}class="with-cover"{{/face}}>
+			<div class="post-time">{{#_time}}{{publish-time}}{{/_time}}</div>
+			<h2 class="post-title"><a href="{{permalink}}">{{& title}}</a></h2>
+		</header>
+		{{#face}}<section class="face" style="background-image: url({{faceurl}})"></section>{{/face}}
+		<section class="post-excerpt {{#face}}with-cover{{/face}}">{{& excerpt}}</section>
+	</article>
+
+	{{/Post}}
+
+	{{!! After all the posts, we have the previous/next pagination links }}
+	{{pagination}}
+
+</main>

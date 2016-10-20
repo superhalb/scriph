@@ -1,0 +1,19 @@
+
+<header class="post-head">
+	<div class="vertical">			
+		<h1 class="blog-title">
+			<a href="../../">{{& Blog.title }}</a>
+		</h1>
+	</div>
+</header>
+
+<main class="content" role="main">
+	<article class="">
+		<header>
+			<div class="post-time">{{#_time}}{{Post.publish-time}}{{/_time}}</div>
+			<a href="{{& Post.permalink}}"><h1 class="post-title">{{& Post.title}}</h1></a>
+		</header>
+		<section class="post-excerpt">{{& Post.excerpt}}</section>
+		<section class="post-content">{{& Post.content}}</section>
+	</article>
+</main>

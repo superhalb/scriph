@@ -1,0 +1,85 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300,800,600);
+@import url(//fonts.googleapis.com/css?family=Inconsolata:400);
+
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+.center {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+  text-align: center;
+	background: #E0DDD0;
+}
+
+.center:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+form {
+  display: inline-block;
+  vertical-align: middle;
+	font-family: 'Open Sans', sans-serif;
+}
+
+input[type="text"],
+input[type="password"]
+{
+	display: block;
+	font-family: 'Inconsolata', monospace;
+	height: 20px;
+	line-height: 20px;
+	font-size: 18px;
+	background: #FFF;
+	padding: .5em 1em;
+	margin: .5em 1em;
+	width: 280px;
+}
+
+button {
+	font-size: 16px;
+	background: #222;
+	color: #EEE;
+	border: none;
+	padding: 0px 18px;
+	margin-bottom: 50px; /* Force to be a little over the vertical centet of the window */
+	transition: color 200ms, background 200ms;
+	height: 38px;
+	line-height: 38px;
+}
+
+button:hover {
+	color: #FFF;
+	background: #444;
+}
+
+
+i {
+	padding-right: .65em;
+}
+
+
+.warning {
+	height: 20px;
+	line-height: 20px;
+	padding: 9px 18px;
+	margin: 9px 18px;
+	background: #D44;
+	color: white;
+	width: 280px;
+}

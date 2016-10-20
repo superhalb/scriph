@@ -1,0 +1,177 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans: 400,600);
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-weight: 400;
+}
+
+#systemindex {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+}
+
+#postlist {
+	position: absolute;
+	top: 80px;
+	bottom: 0px;
+	left: 0px;
+	right: 65%;
+	background: #FFF;
+	overflow-y: auto;
+	overflow-x: hidden;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.postitem {
+	font-size: 15px;
+	line-height: 15px;
+	padding: 20px;
+	border-bottom: 1px solid #EEE;
+}
+
+.postitem-select {
+	border-left: 10px solid #DDD;
+	background: #F7F7F7;
+	padding-left: 10px;
+}
+
+.post-state {
+	font-size: 12px;
+	font-weight: 600;
+	padding-top: 10px;
+	padding-bottom: 0px;
+  pointer-events:none;
+}
+
+.post-time {
+	float:right;
+	font-weight: 400;
+	color: #999
+}
+
+.draft {
+	color: #D66;
+}
+
+.published {
+	color: #999;
+}
+
+.special {
+	text-transform: capitalize;
+	color: #3C6;
+}
+
+#postlist_header {
+	position: absolute;
+	line-height: 40px;
+	background: white;
+	font-size: 11px;
+	font-family: 'Open Sans';
+	color: #888;
+	border-bottom: 1px solid #EEE;
+	top: 40px;
+	left: 0px;
+	height: 40px;
+	right: 65%;
+	text-align: right;
+	z-index: 2;
+}
+
+#postview_header {
+	position: absolute;
+	line-height: 40px;
+	background: white;
+	font-size: 11px;
+	font-family: 'Open Sans';
+	color: #888;
+	border-left: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+	top: 40px;
+	left: 35%;
+	right: 0px;
+	height: 40px;
+	text-align: right;
+	z-index: 2;
+}
+
+#postview {
+	position: absolute;
+	top: 80px;
+	bottom: 0px;
+	left: 35%;
+	right: 0px;
+	background: #FFF;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-left: 1px solid #EEE;
+}
+
+.posttags {
+	font-weight: 400;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding-top: 10px;
+	color: rgb(118,118,118);
+  pointer-events:none;
+}
+
+.posttags:before {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	font-family: 'FontAwesome';
+	line-height: 11px;
+	content: '\f02c';
+	color: rgba(0,0,0,0.35);
+	padding-right: 5px;
+}
+
+.post-menu{
+	display: block;
+	position: absolute;
+	left: 10px;
+	right: auto;
+}
+
+.right{
+	right: 10px;
+	left: auto;
+}
+
+.post-menu li {
+	display: inline-block;
+	padding: 0px 10px;
+	transition: color 200ms, background 200ms;
+	height: 40px;
+	line-height: 40px;
+	cursor: default;
+	text-transform: uppercase;
+}
+
+.post-menu i {
+	position: relative;
+	font-size: 14px;
+	top: 1px;
+}
+
+.post-menu-item-selectable:hover {
+	cursor: pointer;
+	color: #000;
+	background: #DFF;
+}
+
+.post-menu li span {
+	padding-left: 10px;
+}

@@ -1,0 +1,31 @@
+[
+	{
+		"action":"frontend" ,
+		"icon":"eye" ,
+		"text":"Ver Web"
+	} , {
+		"action":"content",
+		"icon":"list",
+		"text":"Contenido"
+	} , {
+		"action":"save",
+		"icon":"save",
+		"text":"Guardar"
+	} , {
+		"action":"publish",
+		"icon":"arrow-up",
+		"text":"Publicar"
+	} , {
+		"action":"unpublish",
+		"icon":"arrow-down",
+		"text":"Retirar"
+	} , {
+		"action":"fixed",
+		"icon":"thumb-tack",
+		"text":"Estático"
+	} , {
+		"action":"discard",
+		"icon":"trash-o",
+		"text":"Eliminar"
+	}
+]

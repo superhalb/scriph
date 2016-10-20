@@ -1,0 +1,99 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans: 400,600);
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-weight: 400;
+}
+
+#systemindex {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+}
+
+#settings {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: #FFF;
+	overflow-y: auto;
+	overflow-x: hidden;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.section {
+	position: relative;
+	background: #FFF;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.section-name {
+	position: absolute;
+	padding: 0px 20px;
+	background: #FFF;
+	line-height: 40px;
+	height: 40px;
+	font-size: 16px;
+}
+
+.section-values {
+	position: relative;
+	left: 160px;
+	right: 0px;
+	padding: 20px;
+	background: rgba(255,255,255,0.1);
+	border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+.entity{
+	margin-bottom: 20px;
+	position: relative;
+	display: block;
+	line-height: 40px;
+}
+
+.label {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-family: 'Open Sans';
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+	font-size: 16px;
+}
+
+.field {
+	position: relative;
+	top: 0px;
+	left: 160px;
+	font-family: 'Open Sans';
+	display: inline-block;
+	width: 480px;
+	font-size: 16px;
+	padding: 0px 20px;
+	text-align: left;
+	border: 1px solid black;
+}
+
+input[type="text"]{
+	height: 40px;
+	line-height: 40px;
+}
+
+textarea {
+	height: 200px;
+	line-height: 40px;
+}

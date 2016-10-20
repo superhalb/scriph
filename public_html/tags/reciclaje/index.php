@@ -1,0 +1,1 @@
+<?php $_GET["f"] = "reciclaje"; include "../../index.php";

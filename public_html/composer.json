@@ -1,0 +1,7 @@
+{
+	"require": {
+		"oodle/krumo": "*",
+		"mustache/mustache": "~2.5",
+		"components/font-awesome": "4.2.*"
+	}
+}

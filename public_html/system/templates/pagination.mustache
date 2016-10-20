@@ -1,0 +1,51 @@
+{{#Pagination.Last}}
+<div id="pagination">
+	<ul>
+		{{#Pagination.Prev}}
+		<a href="{{Pagination.First}}">
+			<li>
+				{{^Pagination.FirstReplacement}}First{{/Pagination.FirstReplacement}}
+				{{#Pagination.FirstReplacement}}{{&Pagination.FirstReplacement}}{{/Pagination.FirstReplacement}}				
+			</li>
+		</a>
+		<a href="{{Pagination.Prev}}">
+			<li>
+				{{^Pagination.PrevReplacement}}Prev{{/Pagination.PrevReplacement}}
+				{{#Pagination.PrevReplacement}}{{&Pagination.PrevReplacement}}{{/Pagination.PrevReplacement}}				
+			</li>
+		</a>
+		{{/Pagination.Prev}}
+		{{#Pagination.PrevPages}}
+		{{#Link}}<a href="{{Link}}">{{/Link}}
+			<li>
+				{{Text}}
+			</li>
+		{{#Link}}</a>{{/Link}}
+		{{/Pagination.PrevPages}}
+			<li class="currentPage">
+				{{Pagination.Page}}
+			</li>
+		{{#Pagination.NextPages}}
+		{{#Link}}<a href="{{Link}}">{{/Link}}
+			<li>
+				{{Text}}
+			</li>
+		{{#Link}}</a>{{/Link}}
+		{{/Pagination.NextPages}}
+		{{#Pagination.Next}}
+		<a href="{{Pagination.Next}}">
+			<li>
+				{{^Pagination.NextReplacement}}Next{{/Pagination.NextReplacement}}
+				{{#Pagination.NextReplacement}}{{&Pagination.NextReplacement}}{{/Pagination.NextReplacement}}				
+			</li>
+		</a>
+		<a href="{{Pagination.Last}}">
+			<li>
+				{{^Pagination.LastReplacement}}Last{{/Pagination.LastReplacement}}
+				{{#Pagination.LastReplacement}}{{&Pagination.LastReplacement}}{{/Pagination.LastReplacement}}				
+			</li>
+		</a>
+		{{/Pagination.Next}}
+	</ul>
+</div>
+{{/Pagination.Last}}

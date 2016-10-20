@@ -1,0 +1,6 @@
+[
+	{ "name": "Title" , "type-text" : true } ,
+	{ "name": "Description" , "type-text-area": true , "length": 200 } ,
+	{ "name": "Storage" , "type-text" : true } ,
+	{ "name": "Theme" , "type-select-dir" : true , "path": "themes" } 
+]

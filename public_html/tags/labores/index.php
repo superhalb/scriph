@@ -1,0 +1,1 @@
+<?php $_GET["f"] = "labores"; include "../../index.php";

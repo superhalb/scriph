@@ -1,0 +1,1 @@
+<?php $_GET["f"] = "amigurumis"; include "../../index.php";
